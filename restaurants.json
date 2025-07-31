@@ -1,0 +1,116 @@
+
+[
+
+    {
+      "name": "Sabri Nihari",
+      "cuisine": "Pakistani",
+      "neighborhood": "Devon",
+      "price": "$$",
+      "cert": "Zabiha Certified",
+      "address": "123 Devon St, Chicago, IL",
+      "phone": "(312) 555-1234",
+      "hours": "10 AM - 10 PM",
+      "website": "https://sabrinihari.com"
+    },
+    {
+      "name": "Al Bawadi Grill",
+      "cuisine": "Middle Eastern",
+      "neighborhood": "Bridgeview",
+      "price": "$$",
+      "cert": "Owner Verified",
+      "address": "456 Bridgeview Ave, Chicago, IL",
+      "phone": "(312) 555-5678",
+      "hours": "11 AM - 11 PM",
+      "website": "https://albawadigrill.com"
+    },
+    {
+      "name": "Tandoori House",
+      "cuisine": "Pakistani",
+      "neighborhood": "Bridgeview",
+      "price": "$",
+      "cert": "Zabiha Certified",
+      "address": "789 Bridgeview Rd, Chicago, IL",
+      "phone": "(312) 555-8765",
+      "hours": "11 AM - 9 PM",
+      "website": "https://tandoorihouse.com"
+    },
+    {
+      "name": "Crispy's Chicken",
+      "cuisine": "American",
+      "neighborhood": "Devon",
+      "price": "$",
+      "cert": "Owner Verified",
+      "address": "321 Devon Blvd, Chicago, IL",
+      "phone": "(312) 555-4321",
+      "hours": "10 AM - 10 PM",
+      "website": "https://crispyschicken.com"
+    },
+    {
+      "name": "BBQ Tonight",
+      "cuisine": "Pakistani",
+      "neighborhood": "Devon",
+      "price": "$$",
+      "cert": "Zabiha Certified",
+      "address": "654 Devon St, Chicago, IL",
+      "phone": "(312) 555-7890",
+      "hours": "11 AM - 11 PM",
+      "website": "https://bbqtonight.com"
+    },
+    {
+      "name": "Falafel Station",
+      "cuisine": "Middle Eastern",
+      "neighborhood": "West Loop",
+      "price": "$",
+      "cert": "Owner Verified",
+      "address": "987 West Loop Rd, Chicago, IL",
+      "phone": "(312) 555-6543",
+      "hours": "10 AM - 10 PM",
+      "website": "https://falafelstation.com"
+    },
+    {
+      "name": "Zam Zam Grill",
+      "cuisine": "Indian",
+      "neighborhood": "Devon",
+      "price": "$$",
+      "cert": "Zabiha Certified",
+      "address": "159 Devon Ave, Chicago, IL",
+      "phone": "(312) 555-3210",
+      "hours": "10 AM - 9 PM",
+      "website": "https://zamzamgrill.com"
+    },
+    {
+      "name": "Shahi Nihari & Grill",
+      "cuisine": "Pakistani",
+      "neighborhood": "Rogers Park",
+      "price": "$$",
+      "cert": "Zabiha Certified",
+      "address": "753 Rogers Park Blvd, Chicago, IL",
+      "phone": "(312) 555-2468",
+      "hours": "11 AM - 10 PM",
+      "website": "https://shahinihari.com"
+    },
+    {
+      "name": "Express Grill",
+      "cuisine": "American",
+      "neighborhood": "Downtown",
+      "price": "$",
+      "cert": "Owner Verified",
+      "address": "852 Downtown St, Chicago, IL",
+      "phone": "(312) 555-9630",
+      "hours": "9 AM - 11 PM",
+      "website": "https://expressgrill.com"
+    },
+    {
+      "name": "Aladdin's Eatery",
+      "cuisine": "Middle Eastern",
+      "neighborhood": "Lincoln Park",
+      "price": "$$",
+      "cert": "Zabiha Certified",
+      "address": "456 Lincoln Park Ave, Chicago, IL",
+      "phone": "(312) 555-1597",
+      "hours": "10 AM - 10 PM",
+      "website": "https://aladdinseatery.com"
+    }
+    
+    
+  ]

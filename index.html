@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🍽️ Halal Guide – Chicago</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0e0e10',
+            neon: '#00FFA3',
+            card: '#1e1e2e',
+            glass: 'rgba(255, 255, 255, 0.05)'
+          },
+          backdropBlur: {
+            xs: '2px',
+          },
+          fontFamily: {
+            display: ['Poppins', 'sans-serif'],
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.8s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0, transform: 'translateY(10px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-dark text-white font-display overflow-x-hidden">
+
+  <header class="text-center py-16 px-4">
+    <h1 class="text-5xl font-extrabold bg-gradient-to-r from-neon to-yellow-400 bg-clip-text text-transparent">
+        <div class="flex justify-end mt-1 mr-4">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdZvdFuL9dkGGwbAkHAaj5fWBfznhkF-22XLC_SXEKcieu9kg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-3 py-1.5 bg-yellow-300 text-black text-sm font-medium rounded-md shadow hover:bg-yellow-400 transition"
+            >
+              ➕ Add Restaurant
+            </a>
+          </div>
+      🍽️ Halal Guide Chicago
+    </h1>
+    <p class="text-gray-400 mt-4 text-lg">Where Flavor Meets Faith ✨</p>
+  </header>
+
+  <section class="max-w-7xl mx-auto px-4 mb-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <select id="filterCuisine" class="bg-glass border border-white/10 text-white p-3 rounded-xl backdrop-blur-md shadow-inner">
+        <option value="">Cuisine</option>
+        <option value="Pakistani">Pakistani</option>
+        <option value="Middle Eastern">Middle Eastern</option>
+        <option value="American">American</option>
+        <option value="Indian">Indian</option>
+      </select>
+
+      <select id="filterNeighborhood" class="bg-glass border border-white/10 text-white p-3 rounded-xl backdrop-blur-md shadow-inner">
+        <option value="">Neighborhood</option>
+        <option value="Devon">Devon</option>
+        <option value="Bridgeview">Bridgeview</option>
+        <option value="West Loop">West Loop</option>
+        <option value="Downtown">Downtown</option>
+        <option value="Rogers Park">Rogers Park</option>
+        <option value="Lincoln Park">Lincoln Park</option>
+      </select>
+
+      <select id="filterPrice" class="bg-glass border border-white/10 text-white p-3 rounded-xl backdrop-blur-md shadow-inner">
+        <option value="">Price</option>
+        <option value="$">$</option>
+        <option value="$$">$$</option>
+        <option value="$$$">$$$</option>
+      </select>
+
+      <select id="filterCert" class="bg-glass border border-white/10 text-white p-3 rounded-xl backdrop-blur-md shadow-inner">
+        <option value="">Halal Cert</option>
+        <option value="Zabiha Certified">Zabiha Certified</option>
+        <option value="Owner Verified">Owner Verified</option>
+      </select>
+    </div>
+  </section>
+
+  <button
+    id="randomPick"
+    class="fixed bottom-6 right-6 bg-neon text-black px-6 py-3 rounded-full shadow-lg hover:scale-105 transition transform z-50"
+  >
+    🎲 Surprise Me
+  </button>
+
+  <section id="restaurantList" class="grid gap-10 px-6 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto mb-20"></section>
+
+  <div
+    id="modal"
+    class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300 z-50"
+  >
+    <div
+      class="bg-glass border border-white/20 rounded-3xl max-w-lg w-full p-8 relative shadow-xl max-h-[90vh] overflow-y-auto"
+    >
+      <button
+        id="modalClose"
+        class="absolute top-4 right-6 text-white text-3xl font-bold hover:text-neon transition"
+        aria-label="Close modal"
+      >&times;</button>
+      <h2 id="modalName" class="text-3xl font-extrabold text-neon mb-4"></h2>
+      <div id="modalContent" class="space-y-3 text-gray-300 text-base"></div>
+      <a
+        id="modalWebsite"
+        href="#"
+        target="_blank"
+        rel="noopener"
+        class="inline-block mt-6 px-6 py-2 rounded-full bg-neon text-black font-semibold hover:bg-yellow-400 transition"
+        >Visit Website</a
+      >
+      <div id="restaurants">
+    </div>
+  </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html> 
