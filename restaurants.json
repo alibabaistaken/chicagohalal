@@ -111,6 +111,106 @@
       "hours": "10 AM - 10 PM",
       "website": "https://aladdinseatery.com"
     }
+
+    {
+        "name": "Bundoo Khan",
+        "cuisine": "Pakistani BBQ",
+        "neighborhood": "Devon",
+        "price": "$$",
+        "cert": "Zabiha Certified",
+        "address": "2539 W Devon Ave, Chicago, IL 60659",
+        "phone": "(872) 241-9100",
+        "hours": "Mon–Fri 4 PM–11 PM; Sat 12 PM–12 AM; Sun 12 PM–11 PM",
+        "website": "https://www.bundookhanchicago.com"
+      },
+      {
+        "name": "Anmol Barbeque",
+        "cuisine": "Pakistani BBQ",
+        "neighborhood": "Devon",
+        "price": "$",
+        "cert": "Zabiha Certified",
+        "address": "4818 N Elston Ave, Chicago, IL 60630",
+        "phone": "(773) 293-6153",
+        "hours": "11 AM – 10 PM daily",
+        "website": "https://www.anmolrestaurants.com"
+      },
+      {
+        "name": "Ghareeb Nawaz",
+        "cuisine": "Pakistani/Indian Fast Food",
+        "neighborhood": "Devon",
+        "price": "$",
+        "cert": "Likely Zabiha (not certified)",
+        "address": "2032 W Devon Ave, Chicago, IL 60659",
+        "phone": "(773) 761-5300",
+        "hours": "Open 24 hours",
+        "website": "http://ghareebnawazonline.com"
+      },
+      {
+        "name": "JK Kabab House",
+        "cuisine": "Indian/Pakistani",
+        "neighborhood": "Devon",
+        "price": "$",
+        "cert": "Zabiha Certified",
+        "address": "2810 W Devon Ave, Chicago, IL 60659",
+        "phone": "(773) 338-1234",
+        "hours": "11 AM – 10 PM daily",
+        "website": "https://www.jkkababhouse.com"
+      },
+      {
+        "name": "Delhi Darbar",
+        "cuisine": "Pakistani/Indian",
+        "neighborhood": "Devon",
+        "price": "$$",
+        "cert": "Zabiha Certified",
+        "address": "3010 W Devon Ave, Chicago, IL 60659",
+        "phone": "(773) 856-0155",
+        "hours": "11 AM – 10 PM",
+        "website": "https://www.facebook.com/delhidarbarusa"
+      },
+      {
+        "name": "Thali Corner",
+        "cuisine": "Indian Thali / Pakistani",
+        "neighborhood": "Devon",
+        "price": "$",
+        "cert": "Zabiha Certified",
+        "address": "2350 W Devon Ave, Chicago, IL 60659",
+        "phone": "(773) 856-0044",
+        "hours": "11 AM – 9 PM",
+        "website": "https://www.thalicorner.com"
+      },
+      {
+        "name": "Kabab King Grill",
+        "cuisine": "Pakistani/Afghan Grill",
+        "neighborhood": "Devon",
+        "price": "$$",
+        "cert": "Zabiha Certified",
+        "address": "2305 W Devon Ave, Chicago, IL 60659",
+        "phone": "(773) 856-0088",
+        "hours": "11 AM – 11 PM",
+        "website": "https://www.facebook.com/kababkinggrill"
+      },
+      {
+        "name": "Hyderabad House Devon",
+        "cuisine": "Hyderabadi / Indian",
+        "neighborhood": "Devon",
+        "price": "$$",
+        "cert": "Zabiha Certified",
+        "address": "2225 W Devon Ave, Chicago, IL 60659",
+        "phone": "(773) 856-0111",
+        "hours": "11 AM – 10 PM",
+        "website": "https://hyderabadhouseusa.com"
+      },
+      {
+        "name": "Sheeba Mandi House",
+        "cuisine": "Pakistani / Mandi Rice",
+        "neighborhood": "Albany Park (near Devon)",
+        "price": "$$",
+        "cert": "Zabiha Certified",
+        "address": "3456 W Foster Ave, Chicago, IL 60625",
+        "phone": "(773) 681-0829",
+        "hours": "12 PM – 11 PM",
+        "website": "https://www.sheebamandihouse.com"
+      }
     
     
   ]
