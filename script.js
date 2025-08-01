@@ -1,15 +1,16 @@
 let restaurantData = [];
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Add restaurant button redirect
   const addRestaurantBtn = document.getElementById('addRestaurantBtn');
   const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdZvdFuL9dkGGwbAkHAaj5fWBfznhkF-22XLC_SXEKcieu9kg/viewform?usp=header';
-
   if (addRestaurantBtn) {
     addRestaurantBtn.addEventListener('click', () => {
       window.open(googleFormURL, '_blank');
     });
   }
 
+  // Fetch and display restaurants
   async function fetchRestaurants() {
     try {
       const response = await fetch('restaurants.json');
@@ -26,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function displayRestaurants(data) {
     const container = document.getElementById('restaurantList');
     container.innerHTML = '';
-
     data.forEach((r) => {
       const card = document.createElement('div');
       card.className =
@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
       <p><strong>Phone:</strong> ${data.phone}</p>
       <p><strong>Address:</strong> ${data.address}</p>
     `;
-
     const websiteBtn = document.getElementById('modalWebsite');
     websiteBtn.href = data.website || '#';
     websiteBtn.style.display = data.website ? 'inline-block' : 'none';
@@ -72,6 +71,30 @@ document.addEventListener('DOMContentLoaded', function () {
       const randomIndex = Math.floor(Math.random() * restaurantData.length);
       openModal(restaurantData[randomIndex]);
     }
+  });
+
+  // 🔥 FILTERS
+  function applyFilters() {
+    const cuisine = document.getElementById('filterCuisine').value;
+    const neighborhood = document.getElementById('filterNeighborhood').value;
+    const price = document.getElementById('filterPrice').value;
+    const cert = document.getElementById('filterCert').value;
+
+    const filtered = restaurantData.filter((r) => {
+      return (
+        (!cuisine || r.cuisine === cuisine) &&
+        (!neighborhood || r.neighborhood === neighborhood) &&
+        (!price || r.price === price) &&
+        (!cert || r.cert === cert)
+      );
+    });
+
+    displayRestaurants(filtered);
+  }
+
+  // Attach change listeners to filters
+  ['filterCuisine', 'filterNeighborhood', 'filterPrice', 'filterCert'].forEach((id) => {
+    document.getElementById(id).addEventListener('change', applyFilters);
   });
 
   fetchRestaurants();
